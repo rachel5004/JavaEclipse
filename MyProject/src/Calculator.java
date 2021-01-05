@@ -28,27 +28,6 @@ public class Calculator extends JFrame {
 		setSize(500,600);
 		setVisible(true);
 		
-//		JPanel jp = new JPanel();
-//		JButton[] bt = new JButton[17];
-//		GridBagConstraints[] gbc = new GridBagConstraints[17];
-//		GridBagLayout gbl = new GridBagLayout();
-//		jp.setLayout(gbl);
-//		for (int i = 0; i<17; i++) {
-//			bt[i] = new JButton(i);
-//		}
-//		jp.setLayout(new FlowLayout());
-//		jp.add(jb1);
-//		jp.add(jb2);
-//		jp.add(jb3);
-//		jp.add(jb4);
-//		jp.add(jb5);
-//		jp.add(jb6);
-//		jp.add(jb7);
-//		jp.add(jb8);
-//		jp.add(jb9);
-//		jp.add(jb0);
-//		jp.add(jbc);
-//		add(jp);
 	}
 	class Window extends JPanel {
 		public Window() {
