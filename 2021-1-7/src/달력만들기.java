@@ -1,5 +1,10 @@
 import java.util.*;
 public class 달력만들기 {
+	static boolean LeanYear(int year) {
+		if((year%4==0 && year%100!=0)||(year%400==0))
+			return true;
+		else return false;
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -27,7 +32,7 @@ public class 달력만들기 {
 								-(year-1)/100
 								+(year-1)/400;
 		int[] lastDay = {31,28,31,30,31,30,31,31,30,31,30,31};
-		if((year%4==0 && year%100!=0)||(year%400==0))
+		if(LeanYear(year))
 			lastDay[1]=29;
 		else lastDay[1]=28;
 		for(int i=0;i<month-1;i++) {
