@@ -85,7 +85,7 @@ public class Calculator extends JFrame {
 			bt[15] = new JButton("+");
 			
 			for (int i = 0; i <=15; i++) {
-				if (i%4 != 3 && i <11) {
+				if (i%4 != 3 && i <11) {          // 숫자 버튼
 					bt[i].setFont(new Font("맑은 고딕", 0, 30));
 					bt[i].setBackground(Color.GRAY);
 					bt[i].setForeground(Color.WHITE);
@@ -97,11 +97,11 @@ public class Calculator extends JFrame {
 								JButton b = (JButton)e.getSource();
 								String oldtext = label.getText();
 								String text = b.getText();
-								String newText = oldtext + text;
+								String newText = oldtext + text;            // 이어서 출력
 								
 								int n = newText.length();
 								if (n<=10) label.setFont(new Font("맑은 고딕", 0, 40));
-								else if (n>10) label.setFont(new Font("맑은 고딕", 0, 30));
+								else if (n>10) label.setFont(new Font("맑은 고딕", 0, 30));    // 입력이 길어지면 글자크기 작게
 								
 								if (n<=25) {
 									label.setText(newText);
@@ -112,7 +112,7 @@ public class Calculator extends JFrame {
 						}
 					});
 				}
-				else if (i == 12 || i == 14) {
+				else if (i == 12 || i == 14) {         // c, =
 					bt[i].setFont(new Font("맑은 고딕",0,30));
 					bt[i].setBackground(Color.LIGHT_GRAY);
 					bt[i].setForeground(Color.WHITE);
@@ -141,7 +141,7 @@ public class Calculator extends JFrame {
 					});		
 					bt[14].addActionListener(new CalcListener());
 				}
-				else if (i % 4 == 3){
+				else if (i % 4 == 3){        // 연산자
 					bt[i].setFont(new Font("맑은 고딕", 0, 40));
 					bt[i].setBackground(new Color (234,150,72));
 					bt[i].setForeground(Color.WHITE);

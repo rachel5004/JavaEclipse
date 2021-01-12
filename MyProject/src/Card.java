@@ -1,9 +1,5 @@
 import java.util.*;
 public class Card {
-	public Card(String shape2, int num2) {
-	}
-	public Card() {
-	}
 	// member variable
 	static String shape;
 	static int num;
