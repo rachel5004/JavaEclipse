@@ -31,7 +31,10 @@ public class 사칙연산 {
 			System.out.println(mul(a,b));
 			break;
 		case "/":
-			System.out.println(div(a,b));
+			if(b==0)
+				System.out.println("0으로 나눌 수 없습니다");
+			else
+				System.out.println(div(a,b));
 			break;
 		default:
 			System.out.println("잘못된 연산자입니다");
