@@ -1,4 +1,11 @@
-
+/*
+ *  "chef": "Ω√≈©¡¶¿Ã∏æ",
+  "poster": "https://recipe1.ezmember.co.kr/cache/rpf/2016/01/19/3ebaebc5e49f53dd2f66b71932e5a33d1.jpg",
+  "mc1": "1,709",
+  "mc2": "21,402",
+  "mc3": "1,006,425",
+  "mc7": "32,735,239"
+ */
 public class Chef {
 	private String chef, mc1, mc2, mc3, mc7;
 

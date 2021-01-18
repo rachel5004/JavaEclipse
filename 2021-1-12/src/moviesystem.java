@@ -190,20 +190,33 @@ public class moviesystem {
 			}
 			return m;
 		}
-		movie[] singerfinddata(String sing) {
+		String[] singerfinddata(String sing) {
 			int cnt = 0;
 			for (String s:singer) {
 				if(s.contains(sing)) cnt++;
 			}
+			String[] s=new String[cnt];
 			int i =0;
 			for(int j=0;j<50;j++) {
-				if(singer[j].contains(sing)) {
-					s[i].title = title[j];
-					i++;
+				if(singer[i].startsWith(sing)){
+					s[i]=title[j];
 					
 				}
 			}
 			return s;
 		}
+		
+		movie movieDetailData(int no)
+		   {
+			   // 배열은 0부터 시작 
+			   movie m=new movie();
+			   m.title=title[no-1];
+			   m.singer=singer[no-1];
+			   m.album=album[no-1];
+			   m.state=state[no-1];
+			   m.modify=modify[no-1];
+			   
+			   return m;
+		   }
 
 }
