@@ -37,15 +37,15 @@ public class MainClass extends JFrame implements ActionListener{
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==b1) {
-			String name = tf.getText();
+		if(e.getSource()==b1){
+			String name=tf.getText();
 			m.insert(name);
 			tf.setText("");
 		}
-		if(e.getSource()==b2) {
-			ArrayList<String> list = m.allData();
+		if(e.getSource()==b2){
+			ArrayList<String> list=m.allData();
 			ta.setText("");
-			for(String name:list) {
+			for(String name:list){
 				ta.append(name+"\n");
 			}
 		}
